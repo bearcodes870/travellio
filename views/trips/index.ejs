@@ -8,5 +8,12 @@
     </tr>
   </thead>
   <tbody>
+    <% trips.forEach(function(trips) { %>
+      <tr>
+        <td><%= trips.date %></td>
+        <td><%= trips.location %></td>
+        <td><%= trips.activity %></td>
+      </tr>
+      <% }); %>
     </tbody>
   </table>

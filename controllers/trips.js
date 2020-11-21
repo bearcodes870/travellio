@@ -4,7 +4,7 @@ module.exports = {
     index,
     // show,
     new: newTrip,
-    // create
+    create
 };
 
 function index(req, res) {
@@ -21,6 +21,6 @@ function create(req, res) {
   const trip = new Trip(req.body);
   trip.save(function(err) {
     if (err) return res.redirect('/trips/new');
-    res.redirect(`/trips/${trip._id}`);
+    res.redirect('/trips');
   });
 }

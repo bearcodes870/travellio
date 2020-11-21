@@ -11,7 +11,7 @@ const Schema = mongoose.Schema;
 const tripSchema = new Schema({
     date: Date,
     location: String,
-    // activity: [activitySchema]
+    activity: []
 }, {
     timestamps: true
 });
