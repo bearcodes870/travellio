@@ -16,4 +16,12 @@ const tripSchema = new Schema({
     timestamps: true
 });
 
-module.exports = mongoose.model('Trip', tripSchema);
+function deleteOne(id) {
+    // Find the index based on the id of the todo object
+    const idx = trips.findIndex(trip => trip.id === parseInt(id));
+    trips.splice(idx, 1);
+  }
+  
+
+module.exports = mongoose.model('Trip', tripSchema),
+                 deleteOne;

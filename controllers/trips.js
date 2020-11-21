@@ -4,7 +4,8 @@ module.exports = {
     index,
     new: newTrip,
     // show,
-    create
+    create,
+    delete: deleteTrip
 };
 
 function index(req, res) {
@@ -17,20 +18,6 @@ function index(req, res) {
     });
   }
 
-// function show(req, res) {
-//   Trip.findById(req.params.id)
-//     .populate('activity').exec(function(err, trip) {
-//       // // Performer.find({}).where('_id').nin(movie.cast)
-//       // Performer.find({_id: {$nin: movie.cast}})
-//       // .exec(function(err, activity) {
-//         console.log(activity);
-//         res.render('trips/show', {
-//           title: 'Trip Itinerary', trip, activity
-//         // });
-//       });
-//     });
-//   }
-
   
 function newTrip(req, res) {
   res.render('trips/new', { title: 'Create New Trip'});
@@ -42,4 +29,10 @@ function create(req, res) {
     if (err) return res.redirect('/trips/new');
     res.redirect('/trips');
   });
+}
+
+function deleteTrip(req, res) {
+  console.log(req.params.id);
+  Trip.deleteOne({ _id: req.params.id }).catch(err => console.log(err));
+  res.redirect('/trips');
 }

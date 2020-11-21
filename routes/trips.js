@@ -6,5 +6,6 @@ router.get('/', tripsCtrl.index);
 router.get('/new', tripsCtrl.new);
 // router.get('/:id', tripsCtrl.show);
 router.post('/', tripsCtrl.create);
+router.delete('/:id', tripsCtrl.delete);
 
 module.exports = router;
