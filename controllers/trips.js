@@ -22,7 +22,7 @@ function show(req, res) {
   Trip.findById(req.params.id)
   .populate('activity').exec(function(err, trip) {
       res.render('trips/show', {
-        title: 'Movie Detail', trip
+        title: 'Itinerary', trip
     });
   });
 }
@@ -35,7 +35,8 @@ function newTrip(req, res) {
 function create(req, res) {
   const trip = new Trip(req.body);
   trip.save(function(err) {
-    if (err) return res.redirect('/trips/new');
+    if (err) {console.log(err);
+      return res.redirect('/trips/new')};
     res.redirect('/trips');
   });
 }
