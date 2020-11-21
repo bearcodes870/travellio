@@ -3,7 +3,7 @@ const Trip = require ('../models/trip');
 module.exports = {
     index,
     new: newTrip,
-    // show,
+    show,
     create,
     delete: deleteTrip
 };
@@ -18,7 +18,16 @@ function index(req, res) {
     });
   }
 
-  
+function show(req, res) {
+  Trip.findById(req.params.id)
+  .populate('activity').exec(function(err, trip) {
+      res.render('trips/show', {
+        title: 'Movie Detail', trip
+    });
+  });
+}
+
+
 function newTrip(req, res) {
   res.render('trips/new', { title: 'Create New Trip'});
 }
