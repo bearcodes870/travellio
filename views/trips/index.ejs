@@ -1,4 +1,5 @@
 <%- include('../partials/header') %>
+
 <table id="list">
   <thead>
     <tr>
@@ -8,11 +9,12 @@
     </tr>
   </thead>
   <tbody>
-    <% trips.forEach(function(trips) { %>
+    <% trips.forEach(function(t) { %>
       <tr>
-        <td><%= trips.date %></td>
-        <td><%= trips.location %></td>
-        <td><%= trips.activity %></td>
+        <td><%= t.date %></td>
+        <td><%= t.location %></td>
+        <!-- <td><%= t.activity %></td> -->
+        <td><a href="/trips/<%= t._id %>">Trip Itinerary</a></td>
       </tr>
       <% }); %>
     </tbody>

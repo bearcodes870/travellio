@@ -2,16 +2,20 @@ const Trip = require ('../models/trip');
 
 module.exports = {
     index,
-    // show,
     new: newTrip,
     create
 };
 
 function index(req, res) {
     Trip.find({}, function(err, trips) {
+      if (err) {
+          console.log("failed", err);
+      }
+      console.log('trips', trips);
       res.render('trips/index', { title: 'Your Upcoming Trips', trips });
     });
   }
+
   
 function newTrip(req, res) {
   res.render('trips/new', { title: 'Create New Trip'});
