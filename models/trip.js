@@ -3,8 +3,9 @@ const Schema = mongoose.Schema;
 
 const activitySchema = new Schema({
     activity: String,
-    time: {type: String, 
-           default: 'Morning'}
+    time: {
+        type: String, 
+        default: 'Morning'}
 }, {
     timestamps: true 
 });
