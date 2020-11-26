@@ -13,7 +13,6 @@
       <tr>
         <td><%= t.date %></td>
         <td><%= t.location %></td>
-        <!-- <td><%= t.activity %></td> -->
         <td><a href="/trips/<%= t._id %>">Itinerary</a></td>
         <td><form action="/trips/<%= t.id %>?_method=DELETE"
           class="delete-form" method="POST">

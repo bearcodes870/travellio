@@ -11,8 +11,14 @@ const activitySchema = new Schema({
 });
 
 const tripSchema = new Schema({
-    date: Date,
-    location: String,
+    date: {
+        type: Date,
+        required: true
+    },
+    location: {
+        type: String,
+        required: true
+    },
     activity: [activitySchema],
 }, {
     timestamps: true

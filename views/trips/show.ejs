@@ -1,8 +1,17 @@
 <%- include('../partials/header') %>
 
 <section id="show-page">
-    <div>Date: </div>
-    <div>Location: </div>
+    <table id="list">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Destination</th>
+            <th>Trip Details</th>
+          </tr>
+        </thead>
+
+        </table>
+      
     
 
     <br><br><h2>Activities</h2>
@@ -23,7 +32,7 @@
 
     <br>
     <h3>All Activities</h3>
-    <% if (trip.activity.length) { %>
+    <% if (trip.activity.length > 0) { %>
         <table>
           <thead>
             <tr>
