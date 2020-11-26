@@ -1,14 +1,14 @@
 <%- include('../partials/header') %>
 
 <h1>for your trip to <%= trip.location %></h1>
-
-<br><br><h2>Activities</h2>
+<h2>Activities</h2>
 
 <form id="add-activity-form" method="POST"
     action="/trips/<%= trip._id %>/activities">
 
     <label>Activity</label>
         <textarea name="activity"></textarea>
+    <br>
     <label>Time of Day</label>
     <select name="time">
         <option value="Morning">Morning</option>
@@ -17,6 +17,7 @@
         <option value="Evening">Evening</option>
         <option value="Night">Night</option>
     </select>
+    <br>
     <input type="submit" value="Add New Activity">
     </form>
 
