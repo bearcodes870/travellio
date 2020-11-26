@@ -2,7 +2,6 @@ const Trip = require('../models/trip');
 
 module.exports = {
   create
-  delete: deleteActivity
 };
 
 function create(req, res) {
