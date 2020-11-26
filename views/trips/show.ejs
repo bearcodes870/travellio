@@ -1,10 +1,12 @@
 <%- include('../partials/header') %>
 
-<section id="show-page">
+<h1>for your trip to <%= trip.location %></h1>
 
-    <br><br><h2>Activities</h2>
-    <form id="add-activity-form" method="POST"
+<br><br><h2>Activities</h2>
+
+<form id="add-activity-form" method="POST"
     action="/trips/<%= trip._id %>/activities">
+
     <label>Activity</label>
     <textarea name="activity"></textarea>
     <label>Time of Day</label>

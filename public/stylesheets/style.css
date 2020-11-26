@@ -1,10 +1,39 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  color: #424748;
+}
+
+head > title {
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: 
+    "nav"
+    "main"
+}
+
 body > nav {
   grid-area: nav;
   background-color: #B8C0C2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 0 30px;
+}
+
+body > main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E8ECEB;
+  padding: 20px;
 }
 
 nav > a {
@@ -23,3 +52,4 @@ nav > a:hover {
 nav > a.active {
   color: white;
 }
+
