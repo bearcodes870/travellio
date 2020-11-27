@@ -2,16 +2,29 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const activitySchema = new Schema({
-    name: String,
-    date: Date
+    activity: String,
+    time: {
+        type: String, 
+        default: 'Morning'}
 }, {
     timestamps: true 
 });
 
 const tripSchema = new Schema({
-    date: Date,
-    location: String,
-    activity: []
+    date: {
+        type: Date,
+        required: true
+    },
+
+    time: {
+        type: String,
+        required: true
+    },
+    location: {
+        type: String,
+        required: true
+    },
+    activity: [activitySchema],
 }, {
     timestamps: true
 });

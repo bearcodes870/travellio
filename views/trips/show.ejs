@@ -1,10 +1,49 @@
 <%- include('../partials/header') %>
 
-<section id="show-page">
-    <div>Date: </div>
-    <div>Location: </div>
-    
-    <div>Activity:</div>
-    <ul>
-    </ul>
+<h1>for your trip to <%= trip.location %></h1>
+<h2>Activities</h2>
+
+<form id="add-activity-form" method="POST"
+    action="/trips/<%= trip._id %>/activities">
+
+    <label>Activity</label>
+        <textarea name="activity"></textarea>
+    <br>
+    <label>Time of Day</label>
+    <select name="time">
+        <option value="Morning">Morning</option>
+        <option value="Noon">Noon</option>
+        <option value="Afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+        <option value="Night">Night</option>
+    </select>
+    <br>
+    <input type="submit" value="Add New Activity">
+    </form>
+
+    <br>
+    <h3>All Activities</h3>
+    <% if (trip.activity.length > 0) { %>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Activity</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% trip.activity.forEach(function(r) { %>
+              <tr>
+                <td><%= r.createdAt %></td>
+                <td><%= r.activity %></td>
+                <td><%= r.time%></td>
+              </tr>
+              <% }); %>
+          </tbody>
+        </table>
+      <% } else { %>
+        <h5>No Plans Yet</h5>
+      <% } %>
+
   </section>

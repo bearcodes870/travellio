@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS';
+  color: #424748;
+}
+
+head > title {
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: 
+    "nav"
+    "main"
+}
+
+body > nav {
+  grid-area: nav;
+  background-color:rosybrown;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px 0 30px;
+}
+
+body > main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: beige;
+  padding: 20px;
+}
+
+nav > a {
+  margin: 10px;
+  text-decoration: none;
+  padding: 5px;
+  border: solid;
+  border-radius: 10px;
+}
+
+nav > a:hover {
+  color: white;
+  background-color: #424748;
+}
+
+nav > a.active {
+  color: white;
+}
+
+#add-activity-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#list a {
+  border-radius: 4px;
+  background-color: rosybrown;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
