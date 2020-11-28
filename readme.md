@@ -1,4 +1,4 @@
-App Title: Travellio
+App Title: **Travellio**, a low-profile tool to plan your upcoming trips and itinerary!
 
 Screenshot(s): 
 
@@ -15,7 +15,6 @@ Technologies Used:
 - Express
 - EJS
 - Node.js
-- Moment.js
 
 Getting Started: 
 
