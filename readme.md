@@ -17,7 +17,7 @@ Technologies Used:
 
 Getting Started: 
 
-[Travellio](https://bear-travel-planner -sei.herokuapp.com/trips)
+[Travellio](https://bear-travel-planner-sei.herokuapp.com/trips)
 
 [Trello](https://trello.com/b/gYIXaLSO/sei-proj-2-travel-app)
 
