@@ -3,7 +3,9 @@ App Title: Travellio
 Screenshot(s): 
 
 [Main View](https://ibb.co/cQwnJdw)
+
 [Itinerary View](https://ibb.co/BCZsjtC)
+
 [Create Trip View](https://ibb.co/mcF7Z72)
 
 Technologies Used: 
