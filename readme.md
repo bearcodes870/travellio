@@ -29,9 +29,13 @@ Getting Started:
 
 Next Steps: 
 
-Google-authorized Login
-OpenWeather API Compatibility
-Twillio Compatibility
-Google Maps Compatibility
-Google Calendar Compatibility
+- Google-authorized Login
+- OpenWeather API Compatibility
+    - Display weather alongside itinerary
+- Twillio Compatibility
+    - Push reminders to texta and notification
+- Google Maps Compatibility
+    - Consume Google Maps API to display location, reviews, directions integration
+- Google Calendar Compatibility
+    - Push reminders to Google Calendar
 
