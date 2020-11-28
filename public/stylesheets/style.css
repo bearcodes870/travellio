@@ -24,7 +24,7 @@ body > nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 20px 0 30px;
+  padding: 0 20px;
 }
 
 body > main {
@@ -33,7 +33,6 @@ body > main {
   flex-direction: column;
   align-items: center;
   background-color: beige;
-  padding: 10px;
 }
 
 nav > a {
@@ -46,7 +45,7 @@ nav > a {
 
 nav > a:hover {
   color: white;
-  background-color: #424748;
+  background-color: rgba(128, 48, 48, 0.808);
 }
 
 nav > a.active {
@@ -56,12 +55,18 @@ nav > a.active {
 #add-activity-form {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 250px;
+}
+
+#add-trip-form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
 }
 
 #list a {
   border-radius: 4px;
-  background-color: rosybrown;
+  background-color:rosybrown;
   padding: 4px;
   text-decoration: none;
   font-size: 14px;
