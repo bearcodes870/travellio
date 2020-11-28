@@ -33,7 +33,7 @@ body > main {
   flex-direction: column;
   align-items: center;
   background-color: beige;
-  padding: 20px;
+  padding: 10px;
 }
 
 nav > a {
@@ -56,6 +56,7 @@ nav > a.active {
 #add-activity-form {
   display: flex;
   flex-direction: column;
+  width: 400px;
 }
 
 #list a {
@@ -64,4 +65,13 @@ nav > a.active {
   padding: 4px;
   text-decoration: none;
   font-size: 14px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  body {
+      grid-template-areas: 
+        "nav"
+        "main";
+  }
 }
