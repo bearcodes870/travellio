@@ -30,7 +30,6 @@ const tripSchema = new Schema({
 });
 
 function deleteOne(id) {
-    // Find the index based on the id of the todo object
     const idx = trips.findIndex(trip => trip.id === parseInt(id));
     trips.splice(idx, 1);
   }
