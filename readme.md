@@ -1,14 +1,16 @@
 # Travellio 
 
-A low-profile tool to plan your upcoming trips and itinerary!
+Travellio is a low-profile trip planner. 
+
+Track the details of your itinerary and keep all of your activities, booking information, and navigation easily accessible in your travels.
 
 # Screenshots: 
 
--[Main View](https://ibb.co/cQwnJdw)
+-[Index Page](public/images/index-page.png)
 
--[Itinerary View](https://ibb.co/BCZsjtC)
+-[Itinerary View](public/images/full-itinerary.png)
 
--[Create Trip View](https://ibb.co/mcF7Z72)
+-[Create Trip View](public/images/add-trip.png)
 
 # Technologies Used: 
 
