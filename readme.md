@@ -40,7 +40,7 @@ Start Here: [Heroku](https://bear-travel-planner-sei.herokuapp.com/trips)
 - OpenWeather API Compatibility
     - Display weather alongside itinerary
 - Twillio Compatibility
-    - Push reminders to texta and notification
+    - Push reminders to text and notification
 - Google Maps Compatibility
     - Consume Google Maps API to display location, reviews, directions integration
 - Google Calendar Compatibility
