@@ -22,7 +22,9 @@ Track the details of your itinerary and keep all of your activities, booking inf
 
 # Getting Started: 
 
-[Travellio](https://bear-travel-planner-sei.herokuapp.com/trips)
+Start Here: [Heroku](https://bear-travel-planner-sei.herokuapp.com/trips)
+
+[GitHub](https://github.com/bearcodes870/travellio)
 
 [Trello](https://trello.com/b/gYIXaLSO/sei-proj-2-travel-app)
 
