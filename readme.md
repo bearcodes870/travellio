@@ -1,6 +1,8 @@
-App Title: **Travellio**, a low-profile tool to plan your upcoming trips and itinerary!
+# Travellio 
 
-Screenshot(s): 
+A low-profile tool to plan your upcoming trips and itinerary!
+
+# Screenshots: 
 
 -[Main View](https://ibb.co/cQwnJdw)
 
@@ -8,7 +10,7 @@ Screenshot(s):
 
 -[Create Trip View](https://ibb.co/mcF7Z72)
 
-Technologies Used: 
+# Technologies Used: 
 
 - MongoDB
 - Mongoose
@@ -16,7 +18,7 @@ Technologies Used:
 - EJS
 - Node.js
 
-Getting Started: 
+# Getting Started: 
 
 [Travellio](https://bear-travel-planner-sei.herokuapp.com/trips)
 
@@ -28,7 +30,7 @@ Getting Started:
 
 
 
-Next Steps: 
+# Next Steps:
 
 - Google-authorized Login
 - OpenWeather API Compatibility
@@ -39,4 +41,3 @@ Next Steps:
     - Consume Google Maps API to display location, reviews, directions integration
 - Google Calendar Compatibility
     - Push reminders to Google Calendar
-
